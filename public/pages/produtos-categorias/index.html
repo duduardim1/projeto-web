@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Minha Loja</title>
+
+  <!-- Fonte de ícones (Material Icons) -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+  <link rel="stylesheet" href="index.css" />
+</head>
+<body>
+
+  <!-- Cabeçalho -->
+  <header class="cabecalho">
+    <div class="cabecalho-container">
+
+      <!-- Logo -->
+      <a href="/home" class="cabecalho-logo">
+        <img src="../../../public/images/logo.png" alt="Old Shoes" />
+      </a>
+
+      <!-- Menu de navegação -->
+      <nav class="menu-principal">
+        <a href="/home" class="menu-link ativo" title="Home">
+          <span class="material-icons icone">home</span>
+          <span class="menu-texto">Home</span>
+        </a>
+        <a href="/produtos" class="menu-link" title="Produtos">
+          <span class="material-icons icone">inventory_2</span>
+          <span class="menu-texto">Produtos</span>
+        </a>
+        <a href="/marcas" class="menu-link" title="Marcas">
+          <span class="material-icons icone">sell</span>
+          <span class="menu-texto">Marcas</span>
+        </a>
+        <a href="/ofertas" class="menu-link" title="Ofertas">
+          <span class="material-icons icone">local_offer</span>
+          <span class="menu-texto">Ofertas</span>
+        </a>
+        <a href="/contato" class="menu-link" title="Contato">
+          <span class="material-icons icone">mail</span>
+          <span class="menu-texto">Contato</span>
+        </a>
+      </nav>
+
+      <!-- Busca que expande ao passar o mouse ou focar -->
+      <div class="busca">
+        <div class="busca-circulo">
+          <span class="material-icons icone">search</span>
+        </div>
+
+        <form class="busca-campo" role="search" action="/busca" method="get">
+          <input
+            class="busca-input"
+            type="search"
+            name="q"
+            placeholder="O que você está procurando?"
+            aria-label="Pesquisar produtos"
+          />
+          <button type="submit" class="busca-enviar" aria-label="Pesquisar">
+            <span class="material-icons icone">search</span>
+          </button>
+        </form>
+      </div>
+
+      <!-- Ações do usuário -->
+      <div class="acoes">
+        <a href="/favoritos" class="acao" title="Favoritos">
+          <span class="material-icons icone">favorite_border</span>
+          <span class="menu-texto">Favoritos</span>
+        </a>
+        <a href="/carrinho" class="acao" title="Carrinho">
+          <span class="material-icons icone">shopping_cart</span>
+          <span class="menu-texto">Carrinho</span>
+        </a>
+        <a href="/cadastro" class="acao" title="Minha conta">
+          <span class="material-icons icone">person_outline</span>
+          <span class="menu-texto">Minha conta</span>
+        </a>
+      </div>
+
+    </div>
+  </header>
+
+  <!-- Conteúdo da página -->
+  <main>
+
+
+
+    <div class="card-produtos">
+
+        <div class="cards"></div>
+        <div class="cards"></div>
+        <div class="cards"></div>
+        <div class="cards"></div>
+        <div class="cards"></div>
+
+
+    </div>
+  </main>
+
+  <!-- Rodapé -->
+  <footer class="rodape">
+    <div class="rodape-principal">
+
+      <div class="rodape-marca">
+        <h1 class="rodape-logo-texto">
+            <img src="../../../public/images/logo.png" alt="Old Shoes" height="150" width="150" />
+
+        </h1>
+
+        <p class="rodape-slogan">
+          mas do que calçados oferecemos<br />
+          conforto que é justo
+        </p>
+
+        <div class="redes-sociais">
+        <img src="../../../public/images/instagram.png" alt="Instagram" />
+          <img src="../../../public/images/facebook.png" alt="Facebook" />
+          <img src="../../../public/images/whatsapp.png" alt="WhatsApp" />
+        </div>
+      </div>
+
+      <div class="rodape-coluna com-borda">
+        <h2 class="rodape-titulo">Serviços</h2>
+        <a href="#" class="rodape-link">Início</a>
+        <a href="#" class="rodape-link">Produtos</a>
+        <a href="#" class="rodape-link">Marcas</a>
+        <a href="#" class="rodape-link">Sobre nós</a>
+      </div>
+
+      <div class="rodape-coluna com-borda">
+        <h2 class="rodape-titulo">Ajudas</h2>
+        <a href="#" class="rodape-link">Como comprar</a>
+        <a href="#" class="rodape-link">Reembolso</a>
+        <a href="#" class="rodape-link">Troca e devoluções</a>
+        <a href="#" class="rodape-link">Sobre nós</a>
+      </div>
+
+      <div class="rodape-atendimento">
+        <h2 class="rodape-titulo">Atendimento</h2>
+
+        <div class="contato-item">
+          <span class="material-icons icone">phone</span>
+          <span>11 9999-9999</span>
+        </div>
+
+        <div class="contato-item">
+          <span class="material-icons icone">email</span>
+          <span>minhaLoja@gmail.com</span>
+        </div>
+
+        <div class="contato-item">
+          <span class="material-icons icone">business</span>
+          <span>seg a sex - 8h às 17h</span>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="rodape-inferior">
+
+      <div class="rodape-frete">
+        <img src="../../../public/images/caminhao.png" alt="Frete" />
+        <strong>frete grátis</strong>
+      </div>
+
+      <div class="rodape-pagamentos">
+        <strong>formas de pagamento</strong>
+        <div class="formas-pagamento">
+          <img src="../../../public/images/visa.png" alt="Visa" />
+          <img src="../../../public/images/mastercard.png" alt="Mastercard" />
+          <img src="../../../public/images/pix.png" alt="Pix" />
+        </div>
+      </div>
+
+      <div class="rodape-endereco">
+        <p>
+          Praça do Sol, 6584, Casa 115 -<br />
+          Liberdade, Rio Verde - GO, CEP<br />
+          76113-744
+        </p>
+      </div>
+
+    </div>
+  </footer>
+
+</body>
+</html>
